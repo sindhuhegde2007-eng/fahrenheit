@@ -13,6 +13,6 @@ def classify_temperature(temp):
     return result
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     temp = 25
     print(classify_temperature(temp))
