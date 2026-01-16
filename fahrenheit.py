@@ -1,16 +1,10 @@
-import sys
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
 
-# Check if argument is provided
-if len(sys.argv) != 2:
-    print("Usage: python celsius_to_fahrenheit.py <celsius_value>")
-    sys.exit(1)
 
-# Read Celsius value from command line
-celsius = float(sys.argv[1])
+if __name__ == "__main__":
+    c = float(input("Enter temperature in Celsius: "))
+    f = celsius_to_fahrenheit(c)
 
-# Convert to Fahrenheit
-fahrenheit = (celsius * 9/5) + 32
-
-# Display result
-print("Temperature in Celsius:", celsius)
-print("Temperature in Fahrenheit:", fahrenheit)
+    print("Temperature in Celsius:", c)
+    print("Temperature in Fahrenheit:", f)
