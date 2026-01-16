@@ -1,4 +1,4 @@
-from temperature import celsius_to_fahrenheit
+from fahrenheit import celsius_to_fahrenheit
 
 def test_zero_celsius():
     result = celsius_to_fahrenheit(0)
