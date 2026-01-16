@@ -3,7 +3,7 @@ def celsius_to_fahrenheit(celsius):
 
 
 if __name__ == "__main__":
-    c = float(input("enter the number"))
+    c =35
     f = celsius_to_fahrenheit(c)
 
     print("Temperature in Celsius:", c)
