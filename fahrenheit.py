@@ -1,10 +1,18 @@
-def celsius_to_fahrenheit(celsius):
-    return (celsius * 9/5) + 32
+def classify_temperature(temp):
+    if temp < 20:
+        status = "Cold"
+    elif temp <= 30:
+        status = "Normal"
+    else:
+        status = "Hot"
+
+    result = (
+        f"Temperature:{temp}\n"
+        f"Status:{status}"
+    )
+    return result
 
 
-if __name__ == "__main__":
-    c =35
-    f = celsius_to_fahrenheit(c)
-
-    print("Temperature in Celsius:", c)
-    print("Temperature in Fahrenheit:", f)
+if _name_ == "_main_":
+    temp = 25
+    print(classify_temperature(temp))
