@@ -14,5 +14,5 @@ def classify_temperature(temp):
 
 
 if __name__ == "__main__":
-    temp = 25
+    temp = 32
     print(classify_temperature(temp))
