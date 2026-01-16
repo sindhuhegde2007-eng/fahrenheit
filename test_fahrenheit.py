@@ -1,11 +1,11 @@
-from fahrenheit import celsius_to_fahrenheit
+from fahrenheit import classify_temperature
 
 def test_zero_celsius():
-    assert celsius_to_fahrenheit(0) == 32
+    assert classify_temperature(0) == 32
 
 def test_boiling_point():
-    assert celsius_to_fahrenheit(100) == 212
+    assert classify_temperature(100) == 212
 
 def test_negative_temperature():
-    assert celsius_to_fahrenheit(-40) == -40
+    assert classify_temperature(-40) == -40
 
